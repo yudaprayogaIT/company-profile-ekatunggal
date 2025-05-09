@@ -1,0 +1,212 @@
+:root {
+  --font1: "montserrat";
+  --font2: "lato";
+  --colorWhite: #fff;
+  --colorRed: #bc1f24;
+  --colorBlack: #030303;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section.hero {
+  height: 100vh;
+  font-family: var(--font1);
+}
+
+/* navbar */
+nav {
+  height: 8vh;
+  position: absolute;
+  top: 0;
+  z-index: 1111;
+  padding: 10px;
+}
+
+.container-fluid {
+  height: 63px;
+  display: flex;
+  gap: 11px;
+  border-radius: 0px;
+}
+
+.navbar-brand {
+  padding: 5px;
+}
+
+.navbar-nav {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.navbar-nav .dropdown-menu {
+  font-size: 12px;
+  border: none;
+}
+
+.navbar-nav li {
+  color: var(--colorBlack);
+  padding: 0 5px 0;
+}
+
+.navbar-nav li a {
+}
+/* akhir navbar */
+
+/* carousel */
+.content {
+  position: absolute;
+  left: 80px;
+  top: 40%;
+  width: 50%;
+  font-weight: bold;
+}
+
+.content h2 {
+  font-size: 25px;
+  color: var(--colorWhite);
+  line-height: auto;
+}
+
+.content button {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #fdd100;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+button.wa {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+button span {
+  color: var(--colorRed);
+}
+
+.content button img {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 82vh;
+}
+/* akhir carousel */
+
+/* medsos */
+.floating-icon {
+  position: fixed;
+  bottom: 65px;
+  right: 40px;
+  z-index: 999;
+}
+/* akhir medsos */
+
+/* label */
+.label {
+  height: 10vh;
+  display: flex;
+  background-color: var(--colorRed);
+}
+
+.label-text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--colorWhite);
+}
+/* akhir label */
+
+/* section about */
+.about .text-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 900px;
+  position: relative;
+}
+
+.about .text1 h2,
+.about .text2 h2 {
+  font-size: 30px;
+  color: var(--colorRed);
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.about .text2 h2 {
+  color: var(--colorBlack);
+  text-align: end;
+}
+
+.about .text1 p,
+.about .text2 p {
+  line-height: 30px;
+  font-family: var(--font2);
+  font-size: 20px;
+  color: #667085;
+}
+
+.about .text2 p {
+  /* color: var(--colorBlack); */
+  text-align: end;
+}
+
+.about .text1,
+.about .text2 {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.text1::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 4px;
+  height: 70%;
+  background-color: #fdd100;
+}
+
+.text2::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  right: -15px;
+  width: 4px;
+  height: 70%;
+  background-color: #fdd100;
+}
+
+.text2::after {
+  content: "";
+  position: absolute;
+  bottom: -33%;
+  left: 75%;
+  width: 450px;
+  height: 4px;
+  background-color: #fdd100;
+}
+
+.about .img-right {
+  position: relative;
+  left: 63px;
+}
+/* akhir section about */

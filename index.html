@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Ekatunggal Tunas Mandiri</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Beranda -->
+    <section class="hero">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="style/img/logo_etm.png" alt="logo_etm" height="40" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Produk
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">barang baku</a></li>
+                  <li><a class="dropdown-item" href="#">bahan jadi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Karir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- akhirNavbar -->
+
+      <!-- carousel image -->
+      <section id="slide" class="carousel">
+        <div
+          id="slide-image"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="10000"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#slide-image"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slide-image"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slide-image"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="item carousel-inner">
+            <div class="carousel-item active">
+              <img src="style/img/hero.png" class="d-block" alt="gedung_ETM" />
+              <div class="content d-none d-md-block">
+                <h2>APAPUN KEBUTUHANMU, SOLUSINYA, #EKATUNGGAL</h2>
+                <button class="wa">
+                  <div class="button-text p-1">Tanya <span>Vika</span></div>
+                  <img src="style/img/wa.png" alt="logo_wa" />
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="style/img/hero2.png" class="d-block" alt="gedung_ETM" />
+              <div class="content d-none d-md-block">
+                <h2>APAPUN KEBUTUHANMU, SOLUSINYA, #EKATUNGGAL</h2>
+                <button class="wa">
+                  <div class="button-text p-1">Tanya <span>Vika</span></div>
+                  <img src="style/img/wa.png" alt="logo_wa" />
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="style/img/hero3.png"
+                style="transform: scaleX(-1)"
+                class="d-block"
+                alt="gedung_ETM"
+              />
+              <div class="content d-none d-md-block">
+                <h2>APAPUN KEBUTUHANMU, SOLUSINYA, #EKATUNGGAL</h2>
+                <button class="wa">
+                  <div class="button-text p-1">Tanya <span>Vika</span></div>
+                  <img src="style/img/wa.png" alt="logo_wa" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slide-image"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slide-image"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </section>
+      <!-- akhir carousel image -->
+
+      <!-- Sidebar -->
+      <div class="floating-icon d-none d-md-flex flex-column">
+        <a href="https://wa.me/085788837057">
+          <div class="icon">
+            <img src="style/img/floating-icon.png" alt="tanya_vika" />
+          </div>
+          <!-- <span>Whatsapp</span> -->
+        </a>
+      </div>
+      <!-- Akhir Sidebar  -->
+
+      <!-- label -->
+      <section class="label">
+        <div class="label-text">BEKERJA DAN MELAYANI DENGAN SEJUTA HATI</div>
+      </section>
+    </section>
+    <!-- akhir label -->
+    <!-- Akhir Beranda -->
+
+    <!-- about -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="text-box col-6">
+            <div class="text1 left-box">
+              <h2>EKATUNGGAL</h2>
+              <p>
+                Perusahaan distributor bahan baku material springbed dan sofa,
+                serta barang jadi. Didirikan oleh Alm. Bapak Gapo Suseno pada
+                tahun 1997. Ekatunggal berkomitmen untuk menghadirkan produk dan
+                layanan berkualitas tinggi yang memenuhi kebutuhan masyarakat
+                Indonesia.
+              </p>
+            </div>
+            <div class="text2 right-box">
+              <h2>LEBIH DARI 2 DEKADE BERDIRI</h2>
+              <p>
+                Ekatunggal terus berinovasi untuk memberikan solusi terbaik bagi
+                pelanggan, sekaligus membangun hubungan jangka panjang
+                berdasarkan kepercayaan, integritas, dan profesionalisme.
+                Didukung oleh tim yang berpengalaman dan jaringan yang luas,
+                Ekatunggal siap menjadi mitra terpercaya untuk masa depan yang
+                lebih baik.
+              </p>
+            </div>
+          </div>
+          <div class="col-6 img-right">
+            <img
+              src="style/img/about.png"
+              height="700px"
+              width="600px"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir about -->
+
+    <!-- keunggulan -->
+
+    <!-- akhir keunggulan -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
