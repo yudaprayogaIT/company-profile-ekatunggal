@@ -228,7 +228,7 @@ button span {
 }
 
 .keunggulan .box {
-  disply: flex;
+  display: flex;
   justify-content: space-around;
 }
 
