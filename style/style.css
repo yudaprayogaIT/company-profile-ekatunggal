@@ -4,6 +4,7 @@
   --colorWhite: #fff;
   --colorRed: #bc1f24;
   --colorBlack: #030303;
+  --colorGrey: #667085;
 }
 
 *,
@@ -160,7 +161,7 @@ button span {
   line-height: 30px;
   font-family: var(--font2);
   font-size: 20px;
-  color: #667085;
+  color: var(--colorGrey);
 }
 
 .about .text2 p {
@@ -199,7 +200,7 @@ button span {
   content: "";
   position: absolute;
   bottom: -33%;
-  left: 75%;
+  left: 62%;
   width: 450px;
   height: 4px;
   background-color: #fdd100;
@@ -210,3 +211,58 @@ button span {
   left: 63px;
 }
 /* akhir section about */
+
+/* section keunggulan */
+.keunggulan .row {
+  margin: 30px;
+}
+
+.keunggulan .row .judul {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--font1);
+}
+
+.keunggulan .judul span {
+  color: var(--colorRed);
+}
+
+.keunggulan .box {
+  disply: flex;
+  justify-content: space-around;
+}
+
+.keunggulan .col-2 {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.keunggulan .card {
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  height: 200px !important;
+}
+
+.keunggulan .card img {
+  width: 70px;
+}
+
+.keunggulan .card .title,
+.keunggulan .card .text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "montserrat";
+  text-transform: uppercase;
+}
+
+.keunggulan .card .text {
+  font-family: "lato";
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-top: 10px;
+  color: var(--colorGrey);
+}
+/* akhir section keunggulan */
