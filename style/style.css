@@ -292,7 +292,7 @@ button span {
   background-image: url(img/terlengkap_hover.png);
 }
 .box .col-2:nth-child(5):hover .img {
-  background-image: url(img/layanan-cs.png);
+  background-image: url(img/layanan-cs_hover.png);
 }
 
 .box .img:hover .text {
