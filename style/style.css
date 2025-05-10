@@ -227,11 +227,7 @@ button span {
   color: var(--colorRed);
 }
 
-.keunggulan .box {
-  display: flex;
-  /* justify-content: center; */
-}
-
+/* item-card */
 .keunggulan .col-2 {
   display: flex;
   align-items: end;
@@ -243,18 +239,75 @@ button span {
   display: flex;
   align-items: center;
   height: 200px !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.keunggulan .card img {
-  width: 70px;
-  padding-top: 8px;
+/* image dalam card */
+.box .img {
+  width: 215px;
+  height: 215px;
+  background-size: 73px;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  display: flex;
+  align-items: end;
 }
 
+.box .col-2:nth-child(1) .img {
+  background-image: url(img/mutu.png);
+}
+.box .col-2:nth-child(2) .img {
+  background-image: url(img/murah.png);
+}
+.box .col-2:nth-child(3) .img {
+  background-image: url(img/non-stop.png);
+}
+.box .col-2:nth-child(4) .img {
+  background-image: url(img/terlengkap.png);
+}
+.box .col-2:nth-child(5) .img {
+  background-image: url(img/layanan-cs.png);
+  margin-bottom: 18px;
+}
+
+/* akhir image dalam card */
+
+/* animasi hover */
+.box .img:hover {
+  color: var(--colorRed);
+  animation-duration: 3s;
+}
+
+.box .col-2:nth-child(1):hover .img {
+  background-image: url(img/mutu_hover.png);
+}
+.box .col-2:nth-child(2):hover .img {
+  background-image: url(img/murah_hover.png);
+}
+.box .col-2:nth-child(3):hover .img {
+  background-image: url(img/non-stop_hover.png);
+}
+.box .col-2:nth-child(4):hover .img {
+  background-image: url(img/terlengkap_hover.png);
+}
+.box .col-2:nth-child(5):hover .img {
+  background-image: url(img/layanan-cs.png);
+}
+
+.box .img:hover .text {
+  color: var(--colorBlack);
+}
+/* akhir animasi hover */
+
+/* text-card */
 .keunggulan .card .title,
 .keunggulan .card .text {
+  margin: 10px 12px 0;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+  width: 90%;
   font-family: "montserrat";
   text-transform: uppercase;
 }
@@ -266,4 +319,6 @@ button span {
   margin-top: 10px;
   color: var(--colorGrey);
 }
+/* akhir text-card */
+/* akhir item-card */
 /* akhir section keunggulan */
