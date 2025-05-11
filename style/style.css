@@ -16,8 +16,8 @@ body {
   font-family: var(--font1);
 }
 
-section.hero,
-.navbar {
+body {
+  height: 10000vh;
 }
 
 /* navbar */
@@ -26,6 +26,7 @@ nav {
   top: 0;
   z-index: 1111;
   padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 40px 0px;
 }
 
 .container-fluid {
@@ -103,7 +104,7 @@ button span {
   width: 100%;
   height: 82vh;
 }
-/* akhir carousel */
+/*========== akhir carousel ==========*/
 
 /* medsos */
 .floating-icon {
@@ -114,7 +115,7 @@ button span {
 }
 /* akhir medsos */
 
-/* label */
+/*========== label ==========*/
 .label {
   height: 10vh;
   display: flex;
@@ -130,9 +131,9 @@ button span {
   font-weight: bold;
   color: var(--colorWhite);
 }
-/* akhir label */
+/*========== akhir label ==========*/
 
-/* section about */
+/*========== section about ==========*/
 .about .text-box {
   display: flex;
   flex-direction: column;
@@ -208,9 +209,9 @@ button span {
   position: relative;
   left: 63px;
 }
-/* akhir section about */
+/*========== akhir section about ==========*/
 
-/* section keunggulan */
+/*========== section keunggulan ==========*/
 .keunggulan {
   margin: 50px 0;
 }
@@ -321,17 +322,119 @@ button span {
   margin-top: 10px;
   color: var(--colorGrey);
 }
-/* akhir text-card */
-/* akhir item-card */
-/* akhir section keunggulan */
+/*========== akhir section keunggulan ==========*/
 
-/* section produk unggulan */
-.product {
+/*========== section produk unggulan ==========*/
+#product {
   margin: 50px 40px;
+  position: relative;
+  overflow: hidden;
 }
 
-.product h2 {
+#product h2 {
   text-transform: uppercase;
   text-align: end;
+  margin-right: -80px;
+  font-weight: bold;
 }
-/* akhir section produk unggulan */
+
+#product .sub-title {
+  color: var(--colorRed);
+  font-family: var(--font2);
+}
+
+/* Product Card */
+#product .product_card {
+  position: relative;
+  backdrop-filter: blur(10px);
+  margin-top: 30px;
+  width: 500px;
+  height: 300px;
+  display: inline-flex;
+}
+
+#product .pc-left::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 4px;
+  height: 60%;
+  background-color: var(--colorYellow);
+}
+
+.pc-right::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: -20px;
+  width: 4px;
+  height: 60%;
+  background-color: var(--colorYellow);
+}
+
+#product .card_img {
+  width: 630px;
+  height: 320px;
+  display: block;
+  object-fit: cover;
+}
+
+#product .item-img-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #35424c;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 2;
+  transform: translateY(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#product .overlay-info {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#product .product_card h6 {
+  font-family: var(--font2);
+  font-weight: bold;
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  transition: all 0.5s;
+  transform: translateY(-15px);
+}
+
+#product .product_card .overlay_img {
+  display: inline-block;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s;
+  filter: grayscale(1);
+  margin-left: auto;
+}
+
+#product .product_card:hover h6 {
+  transform: translateY(0);
+}
+#product .product_card .overlay_img:hover {
+  filter: grayscale(0);
+}
+#product .product_card:hover .item-img-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*========== akhir section produk unggulan ==========*/
